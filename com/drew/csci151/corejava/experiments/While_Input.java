@@ -12,7 +12,7 @@ public class While_Input {
 //			System.out.println("Enter a value, if its less then 10 ill ask again: ");
 //
 //			// will work unless the input is not an int, if not int program will stop
-//			//counter = Input.nextInt();
+//			counter = Input.nextInt();
 //
 //			System.out.println("What number did i entered: " + counter);
 //		}
@@ -32,6 +32,7 @@ public class While_Input {
 				input.next(); // Consume the invalid input and prompt again
 				continue; // Skip the rest of the loop and prompt again
 			}
+			
 
 			System.out.println("What number did I enter: " + counter);
 		}

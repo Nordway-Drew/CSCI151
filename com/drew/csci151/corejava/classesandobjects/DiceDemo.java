@@ -1,4 +1,7 @@
 package com.drew.csci151.corejava.classesandobjects;
+
+import java.util.Random;
+
 /**
  *  This program simulates the rolling of dice.
  */
@@ -25,5 +28,22 @@ public class DiceDemo
       // Display the values of the dice.
       System.out.println(die1.getValue() + " " + 
                          die2.getValue());
+      Random rand = new Random();
+      
+      int winnings=0;
+      for (int i = 0; i<10;i+=1) {
+    	  if(rand.nextBoolean()) {
+    		  winnings = winnings + 1;
+    		  System.out.println("you won! new total: "+winnings);
+    	  }
+    	  else {
+    		  winnings = winnings - 1;
+    		  System.out.println("you lose! new total: "+winnings);
+    	  }
+      }
    }
+   
+   
+   
+   
 }
